@@ -1,0 +1,106 @@
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #f5f5f5; }
+    /* Header */
+    header {
+      background: #d84f57;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+    header h1 { font-size: 26px; font-weight: 700; }
+    header nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    .hero h2 { font-size: 42px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; margin-bottom: 30px; }
+
+    /* Search Box */
+    .search-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      gap: 10px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .search-box input, .search-box button {
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+    }
+    .search-box input { flex: 1; }
+    .search-box button {
+      background: #d84f57;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    /* Features */
+    .features {
+      padding: 60px 40px;
+      background: #fff;
+      text-align: center;
+    }
+    .features h3 { font-size: 32px; margin-bottom: 40px; }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+    .feature {
+      background: #f9f9f9;
+      padding: 25px;
+      border-radius: 10px;
+    }
+    .feature h4 { margin-bottom: 10px; color: #d84f57; }
+
+    /* Offers */
+    .offers {
+      padding: 60px 40px;
+      background: #f5f5f5;
+      text-align: center;
+    }
+    .offers h3 { font-size: 30px; margin-bottom: 30px; }
+    .offer-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 30px 40px;
+      text-align: center;
+    }
+    footer p { font-size: 14px; }
+
+    @media (max-width: 768px) {
+      .search-box { flex-direction: column; }
+      .hero h2 { font-size: 30px; }
+    }
